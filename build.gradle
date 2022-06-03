@@ -70,8 +70,8 @@ publishing {
             from components.java
 
             pom {
-                name = 'Example mod'
-                description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr...'
+                name = 'Ryuo Client'
+                description = 'A modded game client to play Minecraft minigames on LCLPNetwork'
             }
         }
     }

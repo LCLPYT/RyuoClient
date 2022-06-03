@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ryuo",
   "version": "${version}",
 
-  "name": "Example mod",
-  "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr...",
+  "name": "Ryuo Client",
+  "description": "A modded game client to play minigames on LCLPNetwork",
   "authors": [
     "LCLP"
   ],
   "contact": {
-    "homepage": "https://github.com/LCLPYT/fabric-mod-boilerplate",
-    "sources": "https://github.com/LCLPYT/fabric-mod-boilerplate"
+    "homepage": "https://github.com/LCLPYT/RyuoClient",
+    "sources": "https://github.com/LCLPYT/RyuoClient"
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/ryuo/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "org.example.modid.ExampleMod"
+      "work.lclpnet.ryuo.Ryuo"
     ],
     "client": [
-      "org.example.modid.client.ExampleModClient"
+      "work.lclpnet.ryuo.client.RyuoClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "ryuo.mixins.json"
   ],
 
   "depends": {

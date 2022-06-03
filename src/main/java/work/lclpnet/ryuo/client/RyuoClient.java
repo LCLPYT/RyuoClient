@@ -1,8 +1,8 @@
-package org.example.modid.client;
+package work.lclpnet.ryuo.client;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class ExampleModClient implements ClientModInitializer {
+public class RyuoClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
