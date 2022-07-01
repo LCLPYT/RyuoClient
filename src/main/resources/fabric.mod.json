@@ -23,6 +23,9 @@
     ],
     "client": [
       "work.lclpnet.ryuo.client.RyuoClient"
+    ],
+    "server": [
+      "work.lclpnet.ryuo.server.RyuoServer"
     ]
   },
   "mixins": [
