@@ -1,4 +1,4 @@
-package work.lclpnet.ryuo.asm.mixin.common;
+package work.lclpnet.ryuo.asm.mixin.server;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
@@ -13,7 +13,8 @@ public class MinecraftServerMixin {
     @Inject(
             method = "getServerModName",
             at = @At("RETURN"),
-            cancellable = true
+            cancellable = true,
+            remap = false
     )
     public void getServerModName(CallbackInfoReturnable<String> cir) {
         cir.setReturnValue(Ryuo.SERVER_MOD_NAME);

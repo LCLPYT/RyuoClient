@@ -57,4 +57,9 @@ public abstract class AbstractRyuoModule implements RyuoModule {
     protected void onDisable() {
         logger.info("Disabled module {}", id);
     }
+
+    @Override
+    public String toString() {
+        return id.toString();
+    }
 }

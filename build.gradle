@@ -25,6 +25,10 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+
+    maven {
+        url 'https://maven.nucleoid.xyz/'
+    }
 }
 
 dependencies {
@@ -36,6 +40,7 @@ dependencies {
     modImplementation "work.lclpnet.mods:mmocontent:${project.mmocontent_version}" // replace with version
 
     modImplementation "curse.maven:oauth-515054:${project.oauth_version}"
+    modImplementation "xyz.nucleoid:fantasy:${project.fantasy_version}"
 
     /* other Java dependencies */
     implementation 'com.google.code.findbugs:jsr305:3.0.2'

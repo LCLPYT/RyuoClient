@@ -14,6 +14,7 @@ import work.lclpnet.mmocontent.networking.IPacketDecoder;
 import work.lclpnet.mmocontent.networking.MCPacket;
 import work.lclpnet.ryuo.Ryuo;
 import work.lclpnet.ryuo.module.RyuoModule;
+import work.lclpnet.ryuo.module.RyuoModules;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -51,7 +52,7 @@ public class ModuleUpdateS2CPacket extends MCPacket implements IClientPacketHand
     @Environment(EnvType.CLIENT)
     @Override
     public void handleClient(MinecraftClient client, ClientPlayNetworkHandler handler, PacketSender sender) {
-        status.forEach((id, status) -> Ryuo.getModule(id)
+        status.forEach((id, status) -> RyuoModules.get(id)
                 .ifPresentOrElse(m -> m.setEnabled(status), () -> LOGGER.warn("Unknown module {}", id)));
     }
 

@@ -1,8 +1,7 @@
-package work.lclpnet.test;
+package work.lclpnet.ryuo.module;
 
 import net.minecraft.util.Identifier;
 import work.lclpnet.ryuo.Ryuo;
-import work.lclpnet.ryuo.module.AbstractRyuoModule;
 
 public class RyuoTestModule extends AbstractRyuoModule {
 
